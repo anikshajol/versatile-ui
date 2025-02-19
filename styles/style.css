@@ -1,0 +1,145 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+/* common style */
+:root {
+  --primary-color: rgb(230, 83, 60);
+  --text-p-color: rgba(255, 255, 255, 0.5);
+}
+
+/* shared style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 2.81rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+}
+
+.description {
+  color: var(--text-p-color);
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.primary-btn {
+  border-radius: 42px;
+  background: var(--primary-color);
+  padding: 16px 40px 16px 40px;
+  border: none;
+}
+
+.secondary-btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  padding: 16px 40px 16px 40px;
+  background-color: transparent;
+}
+
+.nav,
+.banner-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* header area style */
+
+#header {
+  /* background: rgb(17, 17, 17); */
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17),
+    rgba(119, 119, 119) 100%
+  );
+
+  min-height: 715px;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 97px;
+}
+
+.nav .brand-logo {
+  color: var(--primary-color);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.nav > ul {
+  gap: 47px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  padding: 8px 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.nav ul li a:first-child {
+  padding: 8px 20px 8px 20px;
+}
+
+.nav-btn {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+}
+
+/* banner section */
+
+.banner-container {
+  justify-content: space-between;
+  gap: 167px;
+}
+
+.banner-content {
+  width: 40%;
+}
+
+.banner-content h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4.89rem;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+.special {
+  font-family: "Dancing Script", serif;
+}
+
+.banner-btn-container {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.banner-img {
+  max-width: 100%;
+  object-fit: cover;
+}
