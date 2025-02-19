@@ -8,6 +8,11 @@
   --text-p-color: rgba(255, 255, 255, 0.5);
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 /* shared style */
 * {
   margin: 0;
@@ -20,7 +25,6 @@
   color: rgb(255, 255, 255);
   font-size: 2.81rem;
   font-weight: 900;
-  line-height: 120%;
 }
 
 button {
@@ -31,7 +35,7 @@ button {
 
 .description {
   color: var(--text-p-color);
-  font-size: 1.12rem;
+  font-size: 0.88rem;
   font-weight: 400;
 }
 
@@ -55,7 +59,7 @@ button {
 
 .nav,
 .banner-container {
-  max-width: 1250px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -63,13 +67,9 @@ button {
 
 #header {
   /* background: rgb(17, 17, 17); */
-  background: linear-gradient(
-    180deg,
-    rgba(17, 17, 17),
-    rgba(119, 119, 119) 100%
-  );
+  background: linear-gradient(180deg, rgba(17, 17, 17), rgb(43, 42, 42) 100%);
 
-  min-height: 715px;
+  /* min-height: 715px; */
 }
 
 .nav {
@@ -129,6 +129,10 @@ button {
   font-weight: 900;
   margin-bottom: 28px;
 }
+
+.banner-content p {
+  font-size: 1rem;
+}
 .special {
   font-family: "Dancing Script", serif;
 }
@@ -139,7 +143,11 @@ button {
   margin-top: 28px;
 }
 
-.banner-img {
-  max-width: 100%;
+.banner-img img {
+  width: 100%;
   object-fit: cover;
+}
+
+#banner-btn-two {
+  display: none;
 }

@@ -1,0 +1,27 @@
+@media screen and (max-width: 576px) {
+  .title {
+    text-align: center;
+  }
+  .nav,
+  .nav ul,
+  .banner-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .banner-content {
+    /* text-align: center; */
+    width: 70%;
+  }
+
+  #banner-btn-one {
+    display: none;
+  }
+  #banner-btn-two {
+    display: block;
+  }
+
+  .banner-content h1 {
+    font-size: 4rem;
+  }
+}
