@@ -11,6 +11,7 @@
 body {
   max-width: 1440px;
   margin: auto;
+  background: rgb(39, 39, 39);
 }
 
 /* shared style */
@@ -58,7 +59,8 @@ button {
 }
 
 .nav,
-.banner-container {
+.banner-container,
+section {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -67,7 +69,7 @@ button {
 
 #header {
   /* background: rgb(17, 17, 17); */
-  background: linear-gradient(180deg, rgba(17, 17, 17), rgb(43, 42, 42) 100%);
+  background: linear-gradient(180deg, rgba(17, 17, 17), rgb(39, 39, 39) 100%);
 
   /* min-height: 715px; */
 }
@@ -150,4 +152,71 @@ button {
 
 #banner-btn-two {
   display: none;
+}
+
+.badge {
+  width: 180px;
+  color: rgb(255, 255, 255);
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px 15px;
+  margin-top: -170px;
+  margin-left: -80px;
+}
+
+.badge-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+/* main are start */
+
+main {
+  background: rgb(39, 39, 39);
+  /* height: 500px; */
+}
+
+/* habit container */
+
+.habit-container {
+  padding-top: 100px;
+}
+
+.habit-content {
+  text-align: center;
+
+  width: 671px;
+  margin: auto;
+}
+.habit-content p {
+  margin-top: 14px;
+  margin-bottom: 58px;
+}
+
+.habit-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px dotted rgb(255, 255, 255);
+}
+
+.habit-card .card-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.habit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

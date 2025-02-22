@@ -24,4 +24,14 @@
   .banner-content h1 {
     font-size: 4rem;
   }
+
+  .badge {
+    margin-top: -470px;
+    margin-left: 0px;
+  }
+
+  .habit-card-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
